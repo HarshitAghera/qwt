@@ -287,7 +287,7 @@ add_library(qwt_objects OBJECT ${SOURCES} ${HEADERS})
 
 target_include_directories(qwt_objects INTERFACE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-  $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/classincludes>
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../classincludes>
   $<INSTALL_INTERFACE:${QWT_INSTALL_INCLUDEDIR}>
 )
 
